@@ -14,3 +14,10 @@
 Route::get('/todo/create', 'TodoController@create')->name('todo.create');
 // 追加
 Route::post('/todo', 'TodoController@store')->name('todo.store');
+// 追加
+Route::get('/todo', 'TodoController@index')->name('todo.index');
+// 追加
+Route::get('/todo/{id}', 'TodoController@show')->name('todo.show');
+// 追加
+Route::get('/todo/{id}/edit', 'TodoController@edit')->name('todo.edit');
+Route::put('/todo/{id}', 'TodoController@update')->name('todo.update');
